@@ -17,6 +17,8 @@ Abre pgAdmin o la terminal de Postgres y crea la base de datos:
 CREATE DATABASE t1_game_p4;
 ```
 > Las tablas se crean automáticamente al iniciar el servidor (gracias a `sequelize.sync`).
+<img width="304" height="193" alt="image" src="https://github.com/user-attachments/assets/7767c5a8-753c-4218-b63a-622519748262" />
+
 
 ### 3. Verificar el archivo `.env`
 ```env
@@ -33,8 +35,7 @@ PORT=3000
 ```bash
 npm run dev
 ```
-
----
+<img width="595" height="233" alt="image" src="https://github.com/user-attachments/assets/c5909f4d-35fe-4e38-9be8-e1681684248f" />
 
 ##  Estructura del proyecto
 
@@ -84,6 +85,10 @@ task1/
   "platform": "PC"
 }
 ```
+<img width="520" height="463" alt="image" src="https://github.com/user-attachments/assets/5a42b6db-05c3-4474-8407-0fb87bced779" />
+
+### GET `/game/1`
+<img width="528" height="403" alt="image" src="https://github.com/user-attachments/assets/281f03e1-c03a-4606-80ec-ac649d83e654" />
 
 ### PUT `/game/1`
 ```json
@@ -94,6 +99,8 @@ task1/
   "platform": "Mobile"
 }
 ```
+<img width="521" height="537" alt="image" src="https://github.com/user-attachments/assets/e14409b2-6b2a-44c8-a364-7a8ddf6669b4" />
+
 
 ### PATCH `/game/1`
 ```json
@@ -101,11 +108,15 @@ task1/
   "description": "An updated game"
 }
 ```
+<img width="521" height="529" alt="image" src="https://github.com/user-attachments/assets/458e105c-dc14-45f1-8419-374735f104fc" />
 
 ### DELETE `/game/1`
 > No necesita body. Responde con `204 No Content`.
 
 ---
+<img width="521" height="257" alt="image" src="https://github.com/user-attachments/assets/8aeb9fc0-2852-4756-8059-b967340ad40b" />
+
+
 
 ##  Middleware de errores
 
@@ -116,6 +127,11 @@ Si algo falla (por ejemplo, ID inválido o error de BD), el middleware responde 
   "error": "Game not found"
 }
 ```
+After delete game 1:
+
+<img width="521" height="364" alt="image" src="https://github.com/user-attachments/assets/54d73392-b41e-4c90-8a1d-416c14d29fff" />
+
+
 
 ##  Repositorio
-
+https://github.com/gadrilee/Game-API---Task1
